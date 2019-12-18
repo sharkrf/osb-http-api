@@ -1,2 +1,3 @@
-# osb-http-api
-Description of the openSPOT3 HTTP and WebSocket API interfaces
+# openSPOT3 (SRF-OSB) API
+
+The API documentation will be available in January 2020.
