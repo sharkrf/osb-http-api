@@ -3117,6 +3117,46 @@ Response:
 *id* is the queued (or cancelled) message's ID, or -1 if message adding to the
 queue (or cancel) was unsuccessful.
 
+### gainsettings
+
+Transcode gain settings query (get)/change (post). Returns already stored
+settings.
+
+Request:
+```json
+{
+  "dmr2dstar": 0,
+  "dmr2c4fm": 0,
+  "dmr2nxdn": 0,
+  "dstar2dmr": 0,
+  "dstar2c4fm": 0,
+  "dstar2nxdn": 0,
+  "c4fm2dmr": 0,
+  "c4fm2dstar": 0,
+  "c4fm2nxdn": 0,
+  "nxdn2dmr": 0,
+  "nxdn2dstar": 0,
+  "nxdn2c4fm": 0,
+}
+```
+Response:
+```json
+{
+  "dmr2dstar": 0,
+  "dmr2c4fm": 0,
+  "dmr2nxdn": 0,
+  "dstar2dmr": 0,
+  "dstar2c4fm": 0,
+  "dstar2nxdn": 0,
+  "c4fm2dmr": 0,
+  "c4fm2dstar": 0,
+  "c4fm2nxdn": 0,
+  "nxdn2dmr": 0,
+  "nxdn2dstar": 0,
+  "nxdn2c4fm": 0,
+}
+```
+
 ### miscsettings
 
 Miscellaneous settings query (get)/change (post). Returns already stored
