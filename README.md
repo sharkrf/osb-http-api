@@ -3260,7 +3260,7 @@ Response:
 ### rtcsettings
 
 RTC settings query (get)/change (post). Returns already stored settings.
-**wakeup_at** and **pdown_at** fields represent seconds after midnight (local
+*wakeup_at* and *pdown_at* fields represent seconds after midnight (local
 time).
 
 Request:
