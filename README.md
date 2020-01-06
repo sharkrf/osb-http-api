@@ -1069,6 +1069,22 @@ The JSON format is the following:
 }
 ```
 
+#### Push message type: rtc
+
+openSPOT3 sends this message if the RTC settings are changed. It is also
+automatically sent after the WebSocket connection is opened. The JSON format
+is the following:
+
+```json
+{
+  "type": "rtc",
+  "wakeupat": 100,
+  "powerdownat": 200
+}
+```
+
+*wakeupat* and *powerdownat* are seconds after midnight (local time).
+
 ## WebSocket API interfaces
 
 ### logout
@@ -3238,5 +3254,34 @@ Response:
 {
   "hz": 1000,
   "length_ms": 500
+}
+```
+
+### rtcsettings
+
+RTC settings query (get)/change (post). Returns already stored settings.
+**wakeup_at** and **pdown_at** fields represent seconds after midnight (local
+time).
+
+Request:
+```json
+{
+  "wakeup_enabled": 0,
+  "wakeup_at": 100,
+  "wakeup_cp_enabled": 0,
+  "wakeup_cp": 0,
+  "pdown_enabled": 0,
+  "pdown_at": 200
+}
+```
+Response:
+```json
+{
+  "wakeup_enabled": 0,
+  "wakeup_at": 100,
+  "wakeup_cp_enabled": 0,
+  "wakeup_cp": 0,
+  "pdown_enabled": 0,
+  "pdown_at": 200
 }
 ```
