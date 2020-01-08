@@ -449,6 +449,7 @@ The JSON is the following:
 - 11: Battery charge fault, no battery
 - 12: Battery charge fault, battery overheat
 - 13: Battery fault
+- 14: Battery charge fault, battery freezing
 
 *temp* is in degrees Celsius. *mv* is the battery voltage in millivolts.
 
