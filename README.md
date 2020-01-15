@@ -429,7 +429,8 @@ The JSON is the following:
   "percent": 100,
   "mv": 4000,
   "temp": 30,
-  "remaining_min": 0
+  "remaining_min": 0,
+  "long_life_mode": 0
 }
 ```
 
@@ -3186,6 +3187,7 @@ Request:
   "pwrsaving": 0,
   "turn_off_if_no_charge": 0,
   "no_fast_charge": 0,
+  "batt_long_life_mode": 0,
   "led_app_pwr_percent": 50,
   "led_power_pwr_percent": 50
 }
@@ -3197,6 +3199,7 @@ Response:
   "pwrsaving": 0,
   "turn_off_if_no_charge": 0,
   "no_fast_charge": 0,
+  "batt_long_life_mode": 0,
   "led_app_pwr_percent": 50,
   "led_power_pwr_percent": 50
 }
