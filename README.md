@@ -2610,6 +2610,41 @@ Response:
 }
 ```
 
+### mutesettings
+
+Call muting based on callsign/CCS7 ID settings query (get)/change (post).
+
+Request (optional):
+```json
+{
+  "id1": 2161005,
+  "callsign1": "HA2NON",
+  "id2": 2161006,
+  "callsign2": "HG1MA",
+  "id3": 0,
+  "callsign3": "",
+  "id4": 0,
+  "callsign4": "",
+  "id5": 0,
+  "callsign5": ""
+}
+```
+Response:
+```json
+{
+  "id1": 2161005,
+  "callsign1": "HA2NON",
+  "id2": 2161006,
+  "callsign2": "HG1MA",
+  "id3": 0,
+  "callsign3": "",
+  "id4": 0,
+  "callsign4": "",
+  "id5": 0,
+  "callsign5": ""
+}
+```
+
 ### modemfreq
 
 RX, TX frequency, TX power, RX frequency offset query (get)/change (post).
