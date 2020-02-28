@@ -1087,6 +1087,20 @@ is the following:
 
 *wakeupat* and *powerdownat* are seconds after midnight (local time).
 
+### Binary push messages
+
+The openSPOT3 sends the binary message type in the first byte. Currently only 1
+binary message type is available, webaudio, which is indicated by 0. Following
+bytes contain the binary push message.
+
+#### Binary push message type: webaudio
+
+If web audio is turned on for the current session, then the openSPOT3 sends
+call audio to the WebSocket client as 8kHz 16 bit signed PCM data. The first
+byte of the message indicates the gain correction value in dB which should
+be applied to the PCM data upon playback. Bytes 1-321 contain 320 bytes of PCM
+data.
+
 ## WebSocket API interfaces
 
 ### logout
@@ -3324,5 +3338,22 @@ Response:
   "wakeup_cp": 0,
   "pdown_enabled": 0,
   "pdown_at": 200
+}
+```
+
+### webaudio
+
+Web audio settings for the current WebSocket session query (get)/change (post).
+
+Request:
+```json
+{
+  "enable": 1
+}
+```
+Response:
+```json
+{
+  "enabled": 1
 }
 ```
