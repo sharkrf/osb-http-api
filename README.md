@@ -3343,17 +3343,20 @@ Response:
 
 ### webaudio
 
-Web audio settings for the current WebSocket session query (get)/change (post).
+Web audio settings query (get)/change (post). The *enabled* field (de)activates
+for the current WebSocket session.
 
 Request:
 ```json
 {
-  "enable": 1
+  "enable": 1,
+  "no_modem_audio": 0
 }
 ```
 Response:
 ```json
 {
-  "enabled": 1
+  "enabled": 1,
+  "no_modem_audio": 0
 }
 ```
