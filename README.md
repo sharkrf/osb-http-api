@@ -2348,7 +2348,9 @@ Request (optional):
   "src_id": 9998,
   "prof_id": 9000,
   "con_id": 9998,
-  "ip_id": 9001
+  "ip_id": 9001,
+  "batt_id": 9996,
+  "batt_low_enabled": 1
 }
 ```
 Response:
@@ -2364,7 +2366,9 @@ Response:
   "src_id": 9998,
   "prof_id": 9000,
   "con_id": 9998,
-  "ip_id": 9001
+  "ip_id": 9001,
+  "batt_id": 9996,
+  "batt_low_enabled": 1
 }
 ```
 
