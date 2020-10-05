@@ -739,6 +739,7 @@ the user. The JSON format is the following:
 - 23: REF/XRF server is currently overloaded.
 - 24: REF/XRF server is connected read only.
 - 25: Can't transmit to REF/XRF server, it's connected read only.
+- 26: Server rejected the connection.
 
 #### Push message type: time
 
