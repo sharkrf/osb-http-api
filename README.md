@@ -2459,12 +2459,15 @@ Response:
 General D-STAR settings query (get)/change (post).
 
 If *cross_mode_def_cs* is set then it will be used as the source callsign for
-cross modem mode calls.
+cross modem mode calls. It will be overridden with the *forced_cross_src* if
+*force_cross_src* is 1.
 
 Request (optional):
 ```json
 {
   "echo_callsign": "       E",
+  "force_cross_src": 0,
+  "forced_cross_src": "",
   "cross_mode_def_cs": "",
   "transmit_rx_confirmation": 1,
   "dtmf_automute_cmds": 1,
@@ -2475,6 +2478,8 @@ Response:
 ```json
 {
   "echo_callsign": "       E",
+  "force_cross_src": 0,
+  "forced_cross_src": "",
   "cross_mode_def_cs": "",
   "transmit_rx_confirmation": 1,
   "dtmf_automute_cmds": 1,
